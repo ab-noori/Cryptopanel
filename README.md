@@ -58,7 +58,7 @@
 
 # 📖 [Template] <a name="about-project"></a>
 
-> **[Temaplate]** is a project template with ready README file for creating react applications.  
+> **[Cryptopanel]** is Cryptopanel is a single-page web app that is created using React and Redux and fetches data from CoinGecko API. The application allows users to get details of cryptocurrency information.  
 
 ## 🛠 Built With <a name="built-with"></a>
 
