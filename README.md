@@ -7,9 +7,9 @@
 
 </div>
 
-<!-- Open pull request using the following structure
+<!-- Open a pull request using the following structure
 
-## Pronject Title: Branch title.............
+## Project Title: Branch title.............
 
 ### 🌟Features:
 
@@ -23,9 +23,9 @@
 
 -->
 
-> # Template
+> # Crypto Panel
 
-| Desktop Veiw Representation|
+| Desktop View Representation|
 |---------------------------------------|
 |<div align="center"><img src="./src/assets/project-image.jpg" alt="screenshot" width="auto" height="auto"/></div>|
 |<div align="center"><img src="./src/assets/project-image.jpg" alt="screenshot" width="auto" height="auto"/></div>|
@@ -56,9 +56,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Template] <a name="about-project"></a>
+# 📖 [Crypto Panel] <a name="about-project"></a>
 
-> **[Temaplate]** is a project template with ready README file for creating react applications.  
+> **[Crypto Panel]** is a project template with a ready README file for creating react applications.  
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -84,8 +84,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> - [Live Demo on Gh-pages](https://ab-noori.github.io/math-magicians/)
-> - [Live Demo on Render](https://math-magicians-ab.onrender.com)
+> - [Live Demo on Gh-pages](https://ab-noori.github.io/Cryptopanel/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,7 +97,7 @@ To get a local copy up and running, follow these steps:
 ### Prerequisites
 
 In order to run this project you need:
-  - A browser of you choice.
+  - A browser of your choice.
   - A text editor of your choice.
   - An installed node.js on your local system
 
@@ -109,7 +108,7 @@ Clone this repository to your desired folder:
 - Use the following Commands:
 
       cd your-desired-folder
-      git clone git@github.com:ab-noori/template.git
+      git clone git@github.com:ab-noori/Cryptopanel.git
 
 
 ### Install
@@ -121,7 +120,7 @@ Clone this repository to your desired folder:
 
 
 ### Usage
-- Use following commands to run on your local system:
+- Use the following commands to run the project on your local system:
 
       npm run build
       npm run deploy
@@ -136,18 +135,18 @@ Clone this repository to your desired folder:
       npx stylelint "**/*.{css,scss}" --fix
  
 ### Deployment
-- 1- install `'gh-pages'` with following command:
+- 1- install _gh-pages_ with following command:
 
-      npm i -D gh-pages
+      npm i gh-pages
 
-- 2- Add `'homepage'` to project's jason file:
+- 2- Add _homepage_ to project's jason file:
 
-      "homepage": "https://ab-noori.github.io/repo-name",
+      "homepage": "https://ab-noori.github.io/Cryptopanel",
 
-- 3- Add the following scripts to project's jason file:
+- 3- Add the following scripts to the project's _package.jason_ file:
 
       "predeploy": "npm run build",
-      "deploy": "gh-pages -d build "
+      "deploy": "gh-pages -d build ",
 
 - 4- Finally run the following command:
 
@@ -177,7 +176,7 @@ Clone this repository to your desired folder:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ab-noori/.../issues).
+Feel free to check the [issues page](https://github.com/ab-noori/Cryptopanel/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -191,8 +190,8 @@ Feel free to check the [issues page](https://github.com/ab-noori/.../issues).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-  I would like to thank Microverse and my coding partners. Also I want to give credit to [`Nerd's lesson`](https://www.youtube.com/@Nerdslesson)
-YouTub Channel, it's [`react tutorial`](https://www.youtube.com/watch?v=cd3P3yXyx30) is really helpfull.
+  I would like to thank Microverse and my coding partners. Also, I want to give credit to [`Nerd's lesson`](https://www.youtube.com/@Nerdslesson)
+YouTub Channel, its [`react tutorial`](https://www.youtube.com/watch?v=cd3P3yXyx30) is really helpful.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -205,7 +204,7 @@ YouTub Channel, it's [`react tutorial`](https://www.youtube.com/watch?v=cd3P3yXy
 
 - **How to design the site?**
 
-  - Draw a mockup before start to code
+  - Draw a mockup before starting to code
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
