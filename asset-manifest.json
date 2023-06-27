@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Cryptopanel/static/css/main.23917b4b.css",
+    "main.js": "/Cryptopanel/static/js/main.1848e56a.js",
+    "index.html": "/Cryptopanel/index.html",
+    "main.23917b4b.css.map": "/Cryptopanel/static/css/main.23917b4b.css.map",
+    "main.1848e56a.js.map": "/Cryptopanel/static/js/main.1848e56a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23917b4b.css",
+    "static/js/main.1848e56a.js"
+  ]
+}
