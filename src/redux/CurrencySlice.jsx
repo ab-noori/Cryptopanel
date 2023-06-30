@@ -1,11 +1,16 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const API = 'https://api.coingecko.com/api/v3/search/trending';
+const API = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=1h%2C24h%2C7d&locale=en';
 
 export const fetchCurrency = createAsyncThunk('currency/fetchCurrency', async () => {
-  const response = await fetch(API);
-  const data = await response.json();
-  return data.coins;
+  if (!window.localStorage.getItem('cashe')) {
+    const response = await fetch(API);
+    const data = await response.json();
+    window.localStorage.setItem('cashe', JSON.stringify(data));
+    return data;
+  }
+
+  return JSON.parse(window.localStorage.getItem('cashe'));
 });
 
 const searchAPI = 'https://api.coingecko.com/api/v3/search?query';
@@ -18,23 +23,23 @@ export const searchCurrency = createAsyncThunk('currency/searchCurrency', async 
 
 const initialState = {
   Loading: false,
-  Currencies: [],
+  Currencies: JSON.parse(window.localStorage.getItem('cashe')) || [],
+  // Currencies: [],
   error: null,
-  query: '',
 };
 
 const CurrencySlice = createSlice({
   name: 'Currencies',
   initialState,
   reducers: {
-    setQuery: (state, action) => {
-      const searchedCoin = state.Currencies
-        .filter((item) => item.name.toLowerCase().includes(action.payload));
-      return {
-        ...state,
-        query: searchedCoin,
-      };
-    },
+    // setQuery: (state, action) => {
+    //   const searchedCoin = state.Currencies
+    //     .filter((item) => item.name.toLowerCase().includes(action.payload));
+    //   return {
+    //     ...state,
+    //     query: searchedCoin,
+    //   };
+    // },
   },
   extraReducers: (builder) => {
     builder
@@ -43,17 +48,17 @@ const CurrencySlice = createSlice({
         return newState;
       })
       .addCase(fetchCurrency.fulfilled, (state, { payload }) => {
-        const result = payload.map((coin) => ({
-          id: coin.item.coin_id,
-          name: coin.item.name,
-          image: coin.item.large,
-          priceBtc: coin.item.price_btc,
-        }));
-
+        // const result = Object.values(payload).map((coin) => ({
+        //   id: coin.id,
+        //   name: coin.name,
+        //   image: coin.image,
+        //   priceBtc: coin.current_price,
+        // }));
+        // window.localStorage.setItem('cashe', JSON.stringify(payload));
         const newState = {
           ...state,
           loading: false,
-          Currencies: result,
+          Currencies: payload,
           error: null,
         };
         return newState;
@@ -71,17 +76,17 @@ const CurrencySlice = createSlice({
         return newState;
       })
       .addCase(searchCurrency.fulfilled, (state, { payload }) => {
-        const result = payload.map((coin) => ({
-          id: coin.id,
-          name: coin.name,
-          image: coin.large,
-          priceBtc: coin.price_btc,
-        }));
+        // const result = payload.map((coin) => ({
+        //   id: coin.id,
+        //   name: coin.name,
+        //   image: coin.large,
+        //   priceBtc: coin.price_btc,
+        // }));
 
         const newState = {
           ...state,
           loading: false,
-          Currencies: result,
+          Currencies: payload,
           error: null,
         };
         return newState;
