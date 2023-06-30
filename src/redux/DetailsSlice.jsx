@@ -1,24 +1,48 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const URL = 'https://api.coingecko.com/api/v3/coins';
-const CRITERIA = 'localization=false&tickers=false&market_data=false&community_data=false&developer_data=false';
+// const CRITERIA = 'localization=false&tickers=false&community_data=false&developer_data=false';
 
-export const currencyDetails = createAsyncThunk('currency/currencyDetails', async (id) => {
-  const response = await fetch(`${URL}/${id}?${CRITERIA}`);
+export const fetchDetails = createAsyncThunk('CurrencyDetails/fetchDetails', async (id) => {
+  const response = await fetch(`${URL}/${id}`);
   const data = await response.json();
-  return data.coins;
+  return data;
 });
 
 const initialState = {
   Loading: false,
-  currencyDetails: [],
+  CurrencyDetails: [],
   error: null,
 };
 
 const DetailsSlice = createSlice({
-  name: 'currencyDetails',
+  name: 'CurrencyDetails',
   initialState,
   reducers: {},
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchDetails.pending, (state) => {
+        const newState = { ...state, Loading: true };
+        return newState;
+      })
+      .addCase(fetchDetails.fulfilled, (state, action) => {
+        const newState = {
+          ...state,
+          Loading: false,
+          CurrencyDetails: action.payload,
+          error: null,
+        };
+        return newState;
+      })
+      .addCase(fetchDetails.rejected, (state, action) => {
+        const newState = {
+          ...state,
+          Loading: false,
+          error: action.error.message,
+        };
+        return newState;
+      });
+  },
 });
 
 export default DetailsSlice.reducer;
