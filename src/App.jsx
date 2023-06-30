@@ -2,12 +2,13 @@ import { Routes, Route } from 'react-router';
 import './App.scss';
 import Show from './pages/Show';
 import Home from './pages/Home';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div>Crypto Panel</div>
+        <Navbar />
       </header>
       <main>
         <Routes>
