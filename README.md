@@ -192,7 +192,7 @@ Feel free to check the [issues page](https://github.com/ab-noori/Cryptopanel/iss
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-  First, I would like to thank Microverse and my coding partners. Second, I want to give credit to [`Nerd's lesson`](https://www.youtube.com/@Nerdslesson) YouTub Channel, its [`react tutorial`](https://www.youtube.com/watch?v=cd3P3yXyx30) is really helpful, and third, I should give credit to Nelson Sakwa, I got some inspirations from his design on Behance.
+  First, I would like to thank Microverse and my coding partners. Second, I want to give credit to [`Nerd's lesson`](https://www.youtube.com/@Nerdslesson) YouTub Channel, its [`react tutorial`](https://www.youtube.com/watch?v=cd3P3yXyx30) is really helpful, and third, I should give credit to `Nelson Sakwa`, I got some inspirations from his design on Behance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
