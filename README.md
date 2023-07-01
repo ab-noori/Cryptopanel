@@ -29,8 +29,7 @@
 |---------------------------------------|
 |<div align="center"><img src="./src/assets/project-image1.PNG" alt="screenshot" width="auto" height="auto"/></div>|
 |<div align="center"><img src="./src/assets/project-image2.PNG" alt="screenshot" width="auto" height="auto"/></div>|
-|<div align="center"><img src="./src/assets/mobile-shot1.PNG" alt="screenshot" width="auto" height="400"/>
- <img src="./src/assets/mobile-shot2.PNG" alt="screenshot" width="auto" height="400"/></div>|
+|<div align="center"><img src="./src/assets/mobile-shot1.PNG" alt="screenshot" width="auto" height="400"/><img src="./src/assets/mobile-shot2.PNG" alt="screenshot" width="auto" height="400"/></div>|
 
 <!-- TABLE OF CONTENTS -->
 
