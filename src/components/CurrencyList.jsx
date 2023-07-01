@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import millify from 'millify';
 import './CurrencyList.scss';
+import SearchBar from './SearchBar';
 
 const CurrencyList = ({
   currencies, query, handleQuery, handleKeyDown,
@@ -15,13 +16,7 @@ const CurrencyList = ({
 
   return (
     <>
-      <input
-        type="text"
-        value={query}
-        placeholder="Search"
-        onChange={handleQuery}
-        onKeyDown={handleKeyDown}
-      />
+      <SearchBar value={query} onChange={handleQuery} onKeyDown={handleKeyDown} />
 
       <div className="table-container">
         <table>
