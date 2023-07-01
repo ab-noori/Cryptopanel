@@ -3,6 +3,7 @@ import './App.scss';
 import Show from './pages/Show';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         </Routes>
       </main>
       <footer>
-        <p className="copyright">&copy; 2023 Crypto Panel | Developed by Abdulali Noori</p>
+        <Footer />
       </footer>
     </div>
   );
