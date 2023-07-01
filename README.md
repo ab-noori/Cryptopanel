@@ -164,7 +164,7 @@ Clone this repository to your desired folder:
 
 - GitHub: [@ab-noori](https://github.com/ab-noori)
 - Twitter: [@AbdulAliNoori4](https://twitter.com/AbdulAliNoori4)
-- LinkedIn: [abdul-ali-noori](https://www.linkedin.com/in/abdul-ali-noori-384b85195/)
+- LinkedIn: [abdulali-noori](https://www.linkedin.com/in/abdulali-noori)
 
 
 ## 🔭 Future Features <a name="future-features"></a>
