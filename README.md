@@ -27,8 +27,10 @@
 
 | Desktop View Representation|
 |---------------------------------------|
-|<div align="center"><img src="./src/assets/project-image.jpg" alt="screenshot" width="auto" height="auto"/></div>|
-|<div align="center"><img src="./src/assets/project-image.jpg" alt="screenshot" width="auto" height="auto"/></div>|
+|<div align="center"><img src="./src/assets/project-image1.PNG" alt="screenshot" width="auto" height="auto"/></div>|
+|<div align="center"><img src="./src/assets/project-image2.PNG" alt="screenshot" width="auto" height="auto"/></div>|
+|<div align="center"><img src="./src/assets/mobile-shot1.PNG" alt="screenshot" width="auto" height="400"/>
+ <img src="./src/assets/mobile-shot2.PNG" alt="screenshot" width="auto" height="400"/></div>|
 
 <!-- TABLE OF CONTENTS -->
 
@@ -115,8 +117,7 @@ Clone this repository to your desired folder:
 ### Install
 - Install this project with:
 
-       npx create-react-app my-app
-       cd my-app
+       npx create-react-app .
        npm start
 
 
@@ -168,8 +169,9 @@ Clone this repository to your desired folder:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add About page]**
-- [ ] **[Add Contact page]**
+- [ ] **[Giving funtionality to search input]**
+- [ ] **[Using Charts and graph to disply the currencies data]**
+- [ ] **[Using Creating Professional sidebar panel]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -191,8 +193,7 @@ Feel free to check the [issues page](https://github.com/ab-noori/Cryptopanel/iss
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-  I would like to thank Microverse and my coding partners. Also, I want to give credit to [`Nerd's lesson`](https://www.youtube.com/@Nerdslesson)
-YouTub Channel, its [`react tutorial`](https://www.youtube.com/watch?v=cd3P3yXyx30) is really helpful.
+  First, I would like to thank Microverse and my coding partners. Second, I want to give credit to [`Nerd's lesson`](https://www.youtube.com/@Nerdslesson) YouTub Channel, its [`react tutorial`](https://www.youtube.com/watch?v=cd3P3yXyx30) is really helpful, and third, I should give credit to Nelson Sakwa, I got some inspirations from his design on Behance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
