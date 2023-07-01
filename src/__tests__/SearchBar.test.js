@@ -8,7 +8,7 @@ test('SearchBar component matches snapshot', () => {
       value="test value"
       onChange={() => {}}
       onKeyDown={() => {}}
-    />,
+    />
   );
 
   expect(container.firstChild).toMatchSnapshot();
