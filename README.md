@@ -87,6 +87,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 > - [Live Demo on Gh-pages](https://ab-noori.github.io/Cryptopanel/)
+> - [Introduction to Project](https://www.loom.com/share/24b50649f3344d18a4a007d5715900e8?t=283&sid=a833953d-a480-4f39-981f-49f920cc9fa6)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
