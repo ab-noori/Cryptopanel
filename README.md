@@ -169,8 +169,8 @@ Clone this repository to your desired folder:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Giving funtionality to search input]**
-- [ ] **[Using Charts and graph to disply the currencies data]**
-- [ ] **[Using Creating Professional sidebar panel]**
+- [ ] **[Creating more professional sidebar panel]**
+- [ ] **[Using charts and graph to disply the currencies data]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
