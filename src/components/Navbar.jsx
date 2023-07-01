@@ -5,9 +5,9 @@ import './Navbar.scss';
 
 const Navbar = () => {
   const location = useLocation();
-  const showFlashbackButton = location.pathname !== '/Cryptopanel/';
-  const currencyName = useSelector((state) => state.CurrencyDetails.CurrencyDetails?.name);
-  const pageTitle = location.pathname === '/Cryptopanel/' ? 'Currencies' : currencyName;
+  const showFlashbackButton = location.pathname !== '/Cryptopanel/' && location.pathname !== '/Cryptopanel';
+  const { name, symbol } = useSelector((state) => state.CurrencyDetails.CurrencyDetails);
+  const pageTitle = location.pathname === '/Cryptopanel/' || location.pathname === '/Cryptopanel' ? 'Currencies' : `${name} (${symbol})`;
 
   return (
     <nav className="navbar">
