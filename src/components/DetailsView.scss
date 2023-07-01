@@ -1,73 +1,73 @@
 .details-view {
-    margin: 0;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.details-view ul {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  border-radius: 15px;
+  background-color: rgb(212, 245, 234);
+}
+
+.details-view li {
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  list-style-type: none;
+  transition: background-color 0.3s; /* Adding a transition for smooth effect */
+}
+
+.details-view span.label {
+  text-align: left;
+  width: 30%;
+  font-weight: bold;
+  color: #333;
+}
+
+.details-view span.value {
+  text-align: left;
+  width: 10%;
+  color: #333;
+}
+
+.details-view li:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect */
+.details-view li:hover {
+  background-color: #e0e0e0; /* Change the background color on hover */
+}
+
+@media screen and (max-width: 768px) {
+  .details-view {
+    padding: 1rem 0.4rem;
     align-items: center;
-    text-align: center;
   }
-  
+
   .details-view ul {
-    margin: 0;
-    padding: 0;
-    width: 90%;
-    border-radius: 15px;
-    background-color: rgb(212, 245, 234);
+    width: 95%;
+    align-items: center;
   }
-  
+
   .details-view li {
-    padding: 10px 0;
-    display: flex;
-    flex-wrap: nowrap;
+    align-items: center;
     justify-content: space-around;
-    list-style-type: none;
-    transition: background-color 0.3s; /* Adding a transition for smooth effect */
   }
-  
+
   .details-view span.label {
-    text-align: left;
-    width: 30%;
-    font-weight: bold;
-    color: #333;
+    width: 50%;
+    white-space: nowrap;
   }
-  
+
   .details-view span.value {
-    text-align: left;
-    width: 10%;
-    color: #333;
+    width: 35%;
   }
-  
-  .details-view li:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  /* Hover effect */
-  .details-view li:hover {
-    background-color: #e0e0e0; /* Change the background color on hover */
-  }
-  
-  @media screen and (max-width: 768px) {
-    .details-view {
-      padding: 1rem 0.4rem;
-      align-items: center;
-    }
-  
-    .details-view ul {
-      width: 95%;
-      align-items: center;
-    }
-  
-    .details-view li {
-      align-items: center;
-      justify-content: space-around;
-    }
-  
-    .details-view span.label {
-      width: 50%;
-      white-space: nowrap;
-    }
-    .details-view span.value {
-      width: 35%;
-    }
-  }
-  
+}

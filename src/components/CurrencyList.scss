@@ -1,132 +1,131 @@
 table {
-    width: 98%;
-    margin: 1%;
-    border-collapse: collapse;
+  width: 98%;
+  margin: 1%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Added CSS for striped effect on table headers */
+thead th {
+  background-color: #f2f2f2;
+}
+
+td {
+  cursor: pointer;
+}
+
+th:nth-child(1),
+td:nth-child(1),
+th:nth-child(2),
+td:nth-child(2) {
+  text-align: left;
+}
+
+td img {
+  width: 20px;
+  margin: 0 10px 0 0;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #eaeaea;
+}
+
+thead th:first-child {
+  border-bottom: none;
+}
+
+/* Rest of the CSS for responsive layout */
+@media screen and (max-width: 768px) {
+  /* Adjust the table layout for smaller screens */
+  table {
+    font-size: 12px;
+    display: block;
+    overflow-x: auto;
+    padding: 5px;
   }
-  
-  th,
+
+  thead {
+    display: none;
+  }
+
+  tbody {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  /* Remove Rank column in mobile view */
+  tr {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+  }
+
+  /* Increase image size */
+  td img {
+    width: 50px;
+    margin: 0;
+  }
+
+  th {
+    display: none;
+  }
+
   td {
-    padding: 0.5rem;
-    text-align: center;
+    position: relative;
+    padding-left: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+
+  td::before {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    content: attr(data-label);
+    font-weight: bold;
+  }
+
+  /* Alternate row colors */
+  tbody tr:nth-child(4n),
+  tbody tr:nth-child(4n + 1) {
+    background-color: #e0dfdf;
+  }
+
+  tbody tr:nth-child(4n + 2),
+  tbody tr:nth-child(4n + 3) {
+    background-color: #ececec;
   }
 
   th:nth-child(1),
-  td:nth-child(1),
+  td:nth-child(1) {
+    display: none;
+  }
+
   th:nth-child(2),
   td:nth-child(2) {
-    text-align: left;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 0;
   }
-  
-  td img {
-    width: 20px;
-    margin: 0 10px 0 0;
+
+  /* Hover effect for mobile view */
+  tbody tr:hover {
+    background-color: #c9c9c9;
   }
-  
-  td {
-    cursor: pointer;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  tr:hover {
-    background-color: #eaeaea;
-  }
-  
-  /* Added CSS for striped effect on table headers */
-  thead th {
-    background-color: #f2f2f2;
-  }
-  
-  thead th:first-child {
-    border-bottom: none;
-  }
-  
-  /* Rest of the CSS for responsive layout */
-  @media screen and (max-width: 768px) {
-    /* Adjust the table layout for smaller screens */
-    table {
-      font-size: 12px;
-      display: block;
-      overflow-x: auto;
-      padding: 5px;
-    }
-  
-    thead {
-      display: none;
-    }
-  
-    tbody {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-  
-    /* Remove Rank column in mobile view */
-    tr {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      justify-content: space-between;
-    }
-  
-    /* Increase image size */
-    td img {
-      width: 50px;
-      margin: 0;
-    }
-  
-    th {
-      display: none;
-    }
-  
-    td {
-      position: relative;
-      padding-left: 60%;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 10px;
-    }
-  
-    td:before {
-      position: absolute;
-      top: 0.5rem;
-      left: 0.5rem;
-      content: attr(data-label);
-      font-weight: bold;
-    }
-  
-    /* Alternate row colors */
-    tbody tr:nth-child(4n),
-    tbody tr:nth-child(4n + 1) {
-      background-color: #e0dfdf;
-    }
-  
-    tbody tr:nth-child(4n + 2),
-    tbody tr:nth-child(4n + 3) {
-      background-color: #ececec;
-    }
-  
-    th:nth-child(1),
-    td:nth-child(1) {
-      display: none;
-    }
-  
-    th:nth-child(2),
-    td:nth-child(2) {
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-      font-size: 0;
-    }
-    
-    /* Hover effect for mobile view */
-    tbody tr:hover {
-      background-color: #c9c9c9;
-    }
-  }
-  
+}
