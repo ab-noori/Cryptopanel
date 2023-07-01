@@ -1,13 +1,21 @@
 table {
-    width: 100%;
+    width: 98%;
+    margin: 1%;
     border-collapse: collapse;
   }
   
   th,
   td {
     padding: 0.5rem;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #ddd;
+  }
+
+  th:nth-child(1),
+  td:nth-child(1),
+  th:nth-child(2),
+  td:nth-child(2) {
+    text-align: left;
   }
   
   td img {

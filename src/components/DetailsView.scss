@@ -21,6 +21,7 @@
     flex-wrap: nowrap;
     justify-content: space-around;
     list-style-type: none;
+    transition: background-color 0.3s; /* Adding a transition for smooth effect */
   }
   
   .details-view span.label {
@@ -40,26 +41,33 @@
     background-color: #f2f2f2;
   }
   
+  /* Hover effect */
+  .details-view li:hover {
+    background-color: #e0e0e0; /* Change the background color on hover */
+  }
+  
   @media screen and (max-width: 768px) {
     .details-view {
-      padding: 0;
+      padding: 1rem 0.4rem;
       align-items: center;
     }
-
+  
     .details-view ul {
       width: 95%;
       align-items: center;
-      }
-    
+    }
+  
     .details-view li {
       align-items: center;
       justify-content: space-around;
     }
-
+  
     .details-view span.label {
-
+      width: 50%;
+      white-space: nowrap;
     }
     .details-view span.value {
-
+      width: 35%;
     }
   }
+  
