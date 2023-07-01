@@ -31,16 +31,7 @@ const initialState = {
 const CurrencySlice = createSlice({
   name: 'Currencies',
   initialState,
-  reducers: {
-    // setQuery: (state, action) => {
-    //   const searchedCoin = state.Currencies
-    //     .filter((item) => item.name.toLowerCase().includes(action.payload));
-    //   return {
-    //     ...state,
-    //     query: searchedCoin,
-    //   };
-    // },
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchCurrency.pending, (state) => {
@@ -48,12 +39,6 @@ const CurrencySlice = createSlice({
         return newState;
       })
       .addCase(fetchCurrency.fulfilled, (state, { payload }) => {
-        // const result = Object.values(payload).map((coin) => ({
-        //   id: coin.id,
-        //   name: coin.name,
-        //   image: coin.image,
-        //   priceBtc: coin.current_price,
-        // }));
         // window.localStorage.setItem('cashe', JSON.stringify(payload));
         const newState = {
           ...state,
@@ -76,13 +61,6 @@ const CurrencySlice = createSlice({
         return newState;
       })
       .addCase(searchCurrency.fulfilled, (state, { payload }) => {
-        // const result = payload.map((coin) => ({
-        //   id: coin.id,
-        //   name: coin.name,
-        //   image: coin.large,
-        //   priceBtc: coin.price_btc,
-        // }));
-
         const newState = {
           ...state,
           loading: false,
