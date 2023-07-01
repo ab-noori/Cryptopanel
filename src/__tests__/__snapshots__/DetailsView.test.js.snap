@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders DetailsView correctly 1`] = `
+<div>
+  <div
+    class="details-view"
+  >
+     
+    <ul>
+      <li>
+        <span
+          class="label"
+        >
+           
+          Rank
+          :
+        </span>
+        <span
+          class="value"
+        >
+           
+          1
+        </span>
+      </li>
+      <li>
+        <span
+          class="label"
+        >
+           
+          Price
+          :
+        </span>
+        <span
+          class="value"
+        >
+           
+          $ 1K
+        </span>
+      </li>
+      <li>
+        <span
+          class="label"
+        >
+           
+          Market Cap
+          :
+        </span>
+        <span
+          class="value"
+        >
+           
+          $ 1M
+        </span>
+      </li>
+      <li>
+        <span
+          class="label"
+        >
+           
+          Market Cap Change
+          :
+        </span>
+        <span
+          class="value"
+        >
+           
+          $ 5K / 0.5 %
+        </span>
+      </li>
+      <li>
+        <span
+          class="label"
+        >
+           
+          24H High Price
+          :
+        </span>
+        <span
+          class="value"
+        >
+           
+          $ 1.5K
+        </span>
+      </li>
+      <li>
+        <span
+          class="label"
+        >
+           
+          24H Low Price
+          :
+        </span>
+        <span
+          class="value"
+        >
+           
+          $ 800
+        </span>
+      </li>
+      <li>
+        <span
+          class="label"
+        >
+           
+          24H Price Change
+          :
+        </span>
+        <span
+          class="value"
+        >
+           
+          $ 200 / 0.2 %
+        </span>
+      </li>
+      <li>
+        <span
+          class="label"
+        >
+           
+          All Time High Value
+          :
+        </span>
+        <span
+          class="value"
+        >
+           
+          $ 2K / 0.4 %
+        </span>
+      </li>
+      <li>
+        <span
+          class="label"
+        >
+           
+          All Time Low Value
+          :
+        </span>
+        <span
+          class="value"
+        >
+           
+          $ 500 / 0.1 %
+        </span>
+      </li>
+      <li>
+        <span
+          class="label"
+        >
+           
+          Delutated Valuation
+          :
+        </span>
+        <span
+          class="value"
+        >
+           
+          $ 2M
+        </span>
+      </li>
+      <li>
+        <span
+          class="label"
+        >
+           
+          Total Volume
+          :
+        </span>
+        <span
+          class="value"
+        >
+           
+          $ 50K
+        </span>
+      </li>
+      <li>
+        <span
+          class="label"
+        >
+           
+          Total Supply
+          :
+        </span>
+        <span
+          class="value"
+        >
+           
+          $ 1M
+        </span>
+      </li>
+      <li>
+        <span
+          class="label"
+        >
+           
+          Circulating Supply
+          :
+        </span>
+        <span
+          class="value"
+        >
+           
+          $ 800K
+        </span>
+      </li>
+      <li>
+        <span
+          class="label"
+        >
+           
+          Maximum Supply
+          :
+        </span>
+        <span
+          class="value"
+        >
+           
+          $ 2M
+        </span>
+      </li>
+      <li>
+        <span
+          class="label"
+        >
+           
+          Interest Score
+          :
+        </span>
+        <span
+          class="value"
+        >
+           
+          0.8
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
