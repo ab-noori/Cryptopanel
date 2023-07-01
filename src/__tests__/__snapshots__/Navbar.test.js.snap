@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar component renders correctly when not on Cryptopanel page 1`] = `
+<nav
+  class="navbar"
+>
+  <div
+    class="navbar-left"
+  >
+    <a
+      class="navbar-flashback"
+      href="/Cryptopanel/"
+    >
+      Back
+    </a>
+  </div>
+  <div
+    class="navbar-title-container"
+  >
+    <div
+      class="navbar-title"
+    >
+      <h2>
+        undefined (undefined)
+      </h2>
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`Navbar component renders correctly when on Cryptopanel page 1`] = `
+<nav
+  class="navbar"
+>
+  <div
+    class="navbar-left"
+  >
+    <a
+      class="navbar-flashback"
+      href="/Cryptopanel/"
+    >
+      Back
+    </a>
+  </div>
+  <div
+    class="navbar-title-container"
+  >
+    <div
+      class="navbar-title"
+    >
+      <h2>
+        undefined (undefined)
+      </h2>
+    </div>
+  </div>
+</nav>
+`;

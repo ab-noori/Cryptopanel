@@ -1,0 +1,55 @@
+.navbar {
+  padding: 1rem;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  background-color: #e4e1e1;
+  position: relative; /* Add relative positioning to the navbar */
+}
+
+.navbar-left {
+  margin-right: auto;
+  margin-left: 5%;
+}
+
+.navbar-title-container {
+  position: absolute; /* Position the title absolutely */
+  left: 50%; /* Position it in the center horizontally */
+  transform: translateX(-50%); /* Adjust for center alignment */
+}
+
+.navbar-title {
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.navbar-title h2 {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.navbar-flashback {
+  color: #fff;
+  padding: 0.2rem 0.9rem 0.3rem;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #333;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar-title {
+    color: #333;
+    font-size: 1.1rem;
+    margin: auto 10px;
+  }
+
+  .navbar-left {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
