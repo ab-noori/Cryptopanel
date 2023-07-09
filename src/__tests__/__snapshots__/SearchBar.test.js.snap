@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar component matches snapshot 1`] = `
+<div
+  class="search-bar"
+>
+  <input
+    placeholder="Search"
+    type="text"
+    value="test value"
+  />
+  <button
+    type="button"
+  >
+    Search
+  </button>
+</div>
+`;
